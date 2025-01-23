@@ -1,12 +1,31 @@
-﻿<Window x:Class="_422_Pluzhnikov_Egunov.MainWindow"
+﻿<Window x:Class="WPFApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:_422_Pluzhnikov_Egunov"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Практическая работа 1" Height="450" Width="600">
     <Grid>
-        
+        <!-- Элемент управления для отображения изображения -->
+        <Image Name="FunctionImage" Source="Img/img.png" 
+               HorizontalAlignment="Left" VerticalAlignment="Top" 
+               Width="150" Height="150" Margin="10,10,0,0"/>
+
+
+        <!-- Метки -->
+        <Label Content="Введите x:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="45,158,0,0"/>
+        <Label Content="Введите m:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="45,198,0,0"/>
+        <Label Content="Результат:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="45,298,0,0"/>
+
+        <!-- Поля ввода -->
+        <TextBox Name="InputX" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="115,158,0,0"/>
+        <TextBox Name="InputM" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="115,198,0,0"/>
+        <TextBox Name="ResultOutput" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="115,298,0,0" IsReadOnly="True"/>
+
+        <!-- Переключатели -->
+        <RadioButton Name="FunctionSh" Content="sh(x)" GroupName="Functions" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="45,248,0,0"/>
+        <RadioButton Name="FunctionSin" Content="sin(x)" GroupName="Functions" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="135,248,0,0"/>
+        <RadioButton Name="FunctionCos" Content="cos(x)" GroupName="Functions" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,248,0,0"/>
+
+        <!-- Кнопки -->
+        <Button Name="CalculateButton" Content="Вычислить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="350,248,0,0" Click="CalculateButton_Click"/>
+        <Button Name="ClearButton" Content="Очистить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="350,291,0,0" Click="ClearButton_Click"/>
     </Grid>
 </Window>
