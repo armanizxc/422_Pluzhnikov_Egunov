@@ -4,9 +4,9 @@
         Title="Практическая работа 1" Height="450" Width="600">
     <Grid>
         <!-- Элемент управления для отображения изображения -->
-        <Image Name="FunctionImage" Source="Img/img.png" 
-               HorizontalAlignment="Left" VerticalAlignment="Top" 
-               Width="150" Height="150" Margin="10,10,0,0"/>
+        <Image Name="FunctionImage" Source="/Img.png" 
+               HorizontalAlignment="Center" VerticalAlignment="Top" 
+               Width="580" Height="150" Margin="0,10,0,0"/>
 
 
         <!-- Метки -->
